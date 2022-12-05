@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol ViewControllerDelegate: AnyObject {
-    func newtextForLabel(text: String)
+protocol SecondViewControllerDelegate: AnyObject {
+    func newTextForLabel(text: String)
 }
 
 class ViewController: UIViewController {
@@ -64,9 +64,9 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: ViewControllerDelegate {
+extension ViewController: SecondViewControllerDelegate {
     
-    func newtextForLabel(text: String) {
+    func newTextForLabel(text: String) {
         someLabel.text = text
     }
 }

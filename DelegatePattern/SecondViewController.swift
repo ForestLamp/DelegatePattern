@@ -9,7 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    weak var delegate: ViewControllerDelegate?
+    weak var delegate: SecondViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,6 @@ class SecondViewController: UIViewController {
     }
     
     deinit {
-        self.delegate?.newtextForLabel(text: "New text")
+        self.delegate?.newTextForLabel(text: "New text")
     }
 }
